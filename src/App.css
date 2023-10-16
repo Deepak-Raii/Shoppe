@@ -1,0 +1,192 @@
+*{
+  background-color: #001C30;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+  width: 0px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: antiquewhite;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* background-color: aliceblue; */
+  
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+
+}
+
+.navbar ul li{
+  list-style: none;
+  margin-top: 10px;
+}
+
+.logo{
+  font-size: 3vw;
+  font-weight: 800;
+
+}
+
+.btn{
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: #001C89;
+}
+
+.btn:hover{
+  color: tomato;
+}
+
+.custom-image{
+  height: 80vh;
+  object-fit: cover;
+}
+
+.card{
+  height: 25vh;
+  min-width: 15vw;
+  padding: 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(11, 35, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card :hover{
+  scale: 104%;
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.card-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+.card-container::-webkit-scrollbar{
+  display: none;
+  overflow: hidden;
+  width: 0px;
+  background: transparent;
+}
+
+.item-img{
+  height: 18vh;
+  width: 14vw;
+  border-radius: 7px;
+  margin-top: 5px;
+  object-fit:fill;
+}
+
+/* Detailed_item CSS */
+
+.filterDiv{
+  width: 10%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.collectionDiv{
+  width: 87%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  color: white;
+}
+
+.cards{
+  width: 20vw;
+  height: 50vh;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  border: 0.5px solid gray;
+}
+
+.cards p,h4,h3{
+  background-color: transparent;
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+/* .cards p */
+
+.cards h3:hover{
+  color: gray
+}
+
+.cards .img{
+  height: 30vh;
+  width: 18vw;
+  margin-top: 8px;
+  border-radius: 3px;
+  object-fit: fill;
+  box-shadow: 10px solid black;
+}
+
+.cards .img:hover{
+  scale: 103%;
+  transition: all ease 1s;
+}
+
+/* Login Page CSS */
+
+.loginMainDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  flex-direction: column;
+
+}
+
+.loginDiv,.fields{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fields input, .loginbtn{
+  height: 5vh;
+  width: 30vw;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5vw;
+  margin-top: 15px;
+}
